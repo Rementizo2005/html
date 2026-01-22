@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Wedding | Kristine & Vincent</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink: #ff7eb3;
+    --purple: #7f53ac;
+    --light-bg: #fff0f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    color: #333;
+}
+
+/* ---------- GENERAL ---------- */
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    text-align: center;
+    color: #7f2b7b;
+    margin-bottom: 40px;
+}
+
+.fade {
+    animation: fadeUp 1.8s ease;
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ---------- HOME ---------- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(127,83,172,0.5),
+        rgba(255,126,179,0.5)
+    ),
+    url("https://via.placeholder.com/1600x900") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+/* ---------- STORY ---------- */
+.story {
+    background: var(--light-bg);
+    border-radius: 40px;
+}
+
+.story p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+/* ---------- INVITATION ---------- */
+.invite {
+    background: white;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.invite-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.invite img {
+    width: 260px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.qr {
+    border: 8px solid var(--pink);
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+/* ---------- QUOTES ---------- */
+.quotes {
+    background: linear-gradient(135deg, #fbc8ff, #e0c3fc);
+    border-radius: 40px;
+}
+
+.quote-box {
+    max-width: 900px;
+    margin: auto;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.quote {
+    margin-bottom: 30px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #6a1b9a;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 55px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<section class="hero fade">
+    <div>
+        <h1>Kristine & Vincent</h1>
+        <p>ARE GETTING MARRIED</p>
+    </div>
+</section>
+
+<!-- STORY -->
+<section class="story fade">
+    <h2>Our Love Story</h2>
+    <p>
+        What began as a simple hello slowly turned into a lifetime promise.
+        Through laughter, dreams, and endless conversations, we found a love
+        that feels like home. Every moment together taught us that love is not
+        about perfection, but about choosing each other every single day.
+    </p>
+</section>
+
+<!-- INVITATION -->
+<section class="invite fade">
+    <h2>Wedding Invitation</h2>
+
+    <div class="invite-container">
+        <!-- Couple Picture -->
+        <img src="1.jpg" alt="Couple Photo">
+
+        <!-- QR Code -->
+        <img class="qr" src="1111.jpg" alt="Invitation QR Code">
+    </div>
+
+    <p style="margin-top:30px; font-size:18px;">
+        📅 December 20, 2026<br>
+        📍 Rose Garden Palace
+    </p>
+</section>
+
+<!-- QUOTES -->
+<section class="quotes fade">
+    <h2>Words of Love</h2>
+
+    <div class="quote-box">
+        <div class="quote">“Love is not found, it is built — one heartbeat at a time.”</div>
+        <div class="quote">“In your arms, I found my forever.”</div>
+        <div class="quote">“Two souls, one story, written in love.”</div>
+        <div class="quote">“Every love story is beautiful, but ours is our favorite.”</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    MADE WITH LOVE 💕 | Kristine & Boy
+</footer>
+
+</body>
+</html>
